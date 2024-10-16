@@ -1,0 +1,132 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Safari/605.1.15" version="24.7.17">
+  <diagram name="Pagina-1" id="M5Fnn1LOqk7kX-qOmC9Q">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Multi-agent system DALI" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="8" y="8" width="1280" height="444" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Agent 1" style="rounded=1;arcSize=40;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="33" y="211" width="85" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Agent 2" style="rounded=1;arcSize=40;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="391" y="226" width="85" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="Agent 3" style="rounded=1;arcSize=40;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="791" y="248" width="85" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Linda server" style="rounded=1;arcSize=40;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="1145" y="107" width="118" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="PyDALI" style="rounded=1;arcSize=40;strokeWidth=2" vertex="1" parent="1">
+          <mxGeometry x="394" y="487" width="79" height="49" as="geometry" />
+        </mxCell>
+        <mxCell id="8" value="Internal communication" style="curved=1;startArrow=none;endArrow=block;exitX=0.99;exitY=0.46;entryX=0;entryY=0.41;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="232" y="229" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9" value="Internal communication" style="curved=1;startArrow=none;endArrow=block;exitX=0.99;exitY=0.18;entryX=0;entryY=0.09;" edge="1" parent="1" source="3" target="5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="232" y="178" />
+              <mxPoint x="633" y="178" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10" value="Internal communication" style="curved=1;startArrow=none;endArrow=block;exitX=0.74;exitY=0;entryX=0.05;entryY=0;" edge="1" parent="1" source="3" target="6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="232" y="53" />
+              <mxPoint x="1033" y="53" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11" value="Internal communication" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.6;entryX=0.99;entryY=0.7;" edge="1" parent="1" source="4" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="232" y="272" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" value="Internal communication" style="curved=1;startArrow=none;endArrow=block;exitX=0.99;exitY=0.5;entryX=0;entryY=0.4;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="633" y="251" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" value="Internal communication" style="curved=1;startArrow=none;endArrow=block;exitX=0.84;exitY=0.01;entryX=0;entryY=0.17;" edge="1" parent="1" source="4" target="6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="633" y="85" />
+              <mxPoint x="1033" y="85" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14" value="Internal communication" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.71;entryX=0.99;entryY=0.98;" edge="1" parent="1" source="5" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="633" y="323" />
+              <mxPoint x="232" y="323" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" value="Internal communication" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.85;entryX=0.99;entryY=0.95;" edge="1" parent="1" source="5" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="633" y="354" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16" value="Internal communication" style="curved=1;startArrow=none;endArrow=block;exitX=0.86;exitY=-0.01;entryX=0;entryY=0.39;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1033" y="116" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17" value="Internal communication" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.61;entryX=0.99;entryY=0.01;" edge="1" parent="1" source="6" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1033" y="147" />
+              <mxPoint x="232" y="147" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="18" value="Internal communication" style="curved=1;startArrow=none;endArrow=block;exitX=0.36;exitY=1;entryX=0.91;entryY=1;" edge="1" parent="1" source="6" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1033" y="390" />
+              <mxPoint x="633" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="19" value="Internal communication" style="curved=1;startArrow=none;endArrow=block;exitX=0.38;exitY=1;entryX=0.88;entryY=0.99;" edge="1" parent="1" source="6" target="5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1033" y="421" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="20" value="External communication" style="curved=1;startArrow=none;endArrow=block;exitX=0.84;exitY=0.99;entryX=0.07;entryY=0;" edge="1" parent="1" source="3" target="7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="232" y="364" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="21" value="External communication" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.08;entryX=0.76;entryY=0.99;" edge="1" parent="1" source="7" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="232" y="407" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

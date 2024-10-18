@@ -27,10 +27,6 @@ def copyFolder(src, dst):
 def cleanFolder(dirName):
     if os.path.isdir(dirName):
         shutil.rmtree(dirName+'/')
-    # if os.path.isdir(dirName):
-    #     fl = glob.glob(dirName+'/*')
-    #     for f in fl:
-    #         os.remove(f)
 
 
 DALI_HOME = '../interpreter'
@@ -76,7 +72,6 @@ class Agent:
         self.fname = self.path+'/'+self.fname
         self.flag1 = "'no'"
         self.lang = "italian"
-        #self.communication = "['"+DALI_HOME+"/communication']"
         shutil.copyfile(DALI_HOME+'/communication.con', self.path+'/'+self.name + '_comm.con')
         self.communication = "['"+ self.path+'/'+self.name + "_comm']"
         self.commFipa = ("'"+DALI_HOME+"/communication_fipa'", "'"+DALI_HOME+"/learning'", "'"+DALI_HOME+"/planasp'")
@@ -119,6 +114,33 @@ class Agent:
     def terminate(self):
         self.Prolog.terminate()
         sleep(1)
+
+    def pul(self, goal=None):
+	write2file(self.path+"/"+self.name+'.txt',self.makeConf())
+	self.Prolog.spawn()
+	self.Prolog.consultFile(ACTIVE_DALI, self.agentGoal, debug=True, blocking=True)
+
+
+    def readMove(self):
+	a = self.Prolog.readAll()
+	b = string.replace(a, "(", " ")
+	c = string.replace(b, ")", " ")
+	d = string.replace(c, "[", " ")
+	e = string.replace(d, "]", " ")
+	f = string.replace(e, ",", " ")
+	s = string.split(f)
+	print s 
+
+
+    def readMsg(self):
+	a = self.Prolog.readAll()
+	b = string.replace(a, "(", " ")
+	c = string.replace(b, ")", " ")
+	d = string.replace(c, ",", " ")
+	e = string.replace(d, "_", " ")
+	s = string.split(e)
+	return s 
+
 
 class LindaAgent(Agent):
 
@@ -225,8 +247,6 @@ class MAS:
         # clean temporary files
         cleanFolder(self.work)
         cleanFolder('./util/')
-        # cleanFolder(self.log)
-        # cleanFolder(self.conf)
 
     def prepareWork(self):
         if not os.path.isdir(self.work):
@@ -235,7 +255,6 @@ class MAS:
             os.makedirs(self.conf)
         if not os.path.isdir('./util'):
             os.makedirs('./util')
-        # copyFolder(self.path, self.work)
 
     def start(self, debug=False, startTo=None, startMsg=None ):
         if len(self.MAS)>0:
